@@ -1,0 +1,5 @@
+import './slider';
+
+let test;
+
+
