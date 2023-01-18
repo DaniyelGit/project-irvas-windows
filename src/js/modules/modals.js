@@ -11,8 +11,6 @@ const modals = () => {
 		trigger.forEach(item => {
 			item.addEventListener('click', (e) => {
 				if (e.target) {
-					console.log(e.type);
-					console.log(e.target);
 					e.preventDefault();
 				};
 

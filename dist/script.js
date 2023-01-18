@@ -14960,7 +14960,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 
 
-window.addEventListener('click', function () {
+window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
@@ -14988,8 +14988,6 @@ var modals = function modals() {
     trigger.forEach(function (item) {
       item.addEventListener('click', function (e) {
         if (e.target) {
-          console.log(e.type);
-          console.log(e.target);
           e.preventDefault();
         }
 
