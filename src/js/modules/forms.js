@@ -45,7 +45,7 @@ const forms = () => {
 				inputs.forEach(item => {
 					item.value = '';
 				});
-			}
+			};
 
 
 			postData('assets/server.php', formData)

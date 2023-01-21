@@ -15671,7 +15671,6 @@ var tabs = function tabs(headerSelector, tabSelector, contentSelector, activeCla
   var header = document.querySelector(headerSelector),
       tab = document.querySelectorAll(tabSelector),
       content = document.querySelectorAll(contentSelector);
-  console.log(tab);
 
   function hideTabContent() {
     content.forEach(function (item) {
