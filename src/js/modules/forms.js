@@ -1,12 +1,12 @@
 const forms = () => {
 
-
 	const form = document.querySelectorAll('form'),
 		inputs = document.querySelectorAll('input'),
 		phoneInputs = document.querySelectorAll('input[name="user_phone"]');
 
 
 	phoneInputs.forEach(item => {
+		debugger
 		item.addEventListener('input', () => {
 			item.value = item.value.replace(/\D/, '');
 		});
@@ -31,6 +31,13 @@ const forms = () => {
 	};
 
 
+	const clearInputs = () => {
+		inputs.forEach(item => {
+			item.value = '';
+		});
+	};
+
+
 	form.forEach(item => {
 		item.addEventListener('submit', (e) => {
 			e.preventDefault();
@@ -40,13 +47,6 @@ const forms = () => {
 			item.appendChild(statusMessage);
 
 			const formData = new FormData(item);
-
-			const clearInputs = () => {
-				inputs.forEach(item => {
-					item.value = '';
-				});
-			};
-
 
 			postData('assets/server.php', formData)
 				.then(res => {
