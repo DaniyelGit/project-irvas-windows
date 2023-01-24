@@ -6,7 +6,6 @@ const forms = () => {
 
 
 	phoneInputs.forEach(item => {
-		debugger
 		item.addEventListener('input', () => {
 			item.value = item.value.replace(/\D/, '');
 		});
